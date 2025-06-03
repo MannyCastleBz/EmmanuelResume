@@ -64,7 +64,7 @@ ul li {
 
 @media print {
   body {
-    zoom: 0.9;
+    zoom: 0.95;
     margin: 0;
     padding: 0;
     background: white;
