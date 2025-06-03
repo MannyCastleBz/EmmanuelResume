@@ -63,7 +63,42 @@ ul li {
 }
 
 @media print {
+  body {
+    zoom: 0.9;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+  }
+
+  .container {
+    box-shadow: none;
+    padding: 10px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
   .print-button {
     display: none !important;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  ul, p {
+    margin: 5px 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page {
+    size: A4;
+    margin: 0.5in;
   }
 }
